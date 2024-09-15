@@ -16,7 +16,6 @@ public class MultidimensionalArrays
             }
             list.add(innerList);
         }
-
         System.out.println(list);
     }
 }
