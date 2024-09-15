@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-
+//Comparing adjacent elements until the array is sorted in ascending order
 public class BubbleSort
 {
     static void bubbleSort(int[] arr)
