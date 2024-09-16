@@ -1,5 +1,8 @@
 public class QuickSort
 {
+    //Uses a pivot to sort, where the elements less than the pivot are arranged to the left of the pivot.
+    //Elements more than the pivot are arranged to the right of the pivot.
+    //Called recursively
     static int partition(int[] arr, int low, int high)
     {
         int pivot = arr[high];
