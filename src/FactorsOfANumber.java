@@ -7,10 +7,12 @@ public class FactorsOfANumber
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        while(number>0)
+        for(int i = 1; i<=number; i++)
         {
-            number = number / 10;
-            System.out.println(number);
+            if(number % i == 0)
+            {
+                System.out.println(i);
+            }
         }
     }
 }
