@@ -1,7 +1,7 @@
 public class MaxValueOfArray
 {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,2,4,3,1};
         System.out.println(max(arr));
     }
 

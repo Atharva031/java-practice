@@ -14,7 +14,8 @@ public class LinearSearch
         return -1;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int[] arr = {23,33,45,5,6};
         int x = 5;
         System.out.println(search(arr, x));

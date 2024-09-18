@@ -1,28 +1,27 @@
 public class BinarySearch
 {
-
     //If the element to be found is greater than the pointer x, consider all the elements to the right of x.
     //If the element to be found is less than the pointer x, consider all the elements to the left of x.
-    static int binarySearch(int[] arr, int x)
+    static int binarySearch(int[] arr, int target)
     {
-        int l = 0;
-        int r = arr.length-1;
-        while(l<=r)
+        int left = 0;
+        int right = arr.length-1;
+        while(left<=right)
         {
-            int m = l + (r-1)/2;
+            int mid = left + (right-1)/2;
 
-            if(arr[m] == x)
+            if(arr[mid] == target)
             {
-                return m;
+                return mid;
             }
 
-            if(arr[m]<x)
+            if(arr[mid]<target)
             {
-                l = m + 1;
+                left = mid + 1;
             }
             else
             {
-                r = m - 1;
+                right = mid - 1;
             }
         }
         return -1;
@@ -30,7 +29,7 @@ public class BinarySearch
 
     public static void main(String[] args) {
         int[] arr = {22,3,5,6,7};
-        int x = 5;
-        System.out.println(binarySearch(arr, x));
+        int target = 5;
+        System.out.println(binarySearch(arr, target));
     }
 }

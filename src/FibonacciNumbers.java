@@ -18,5 +18,4 @@ public class FibonacciNumbers
         }
         System.out.println(b);
     }
-
 }

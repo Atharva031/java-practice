@@ -1,4 +1,4 @@
-public class CountingOccurences
+public class CountingOccurrences
 {
     public static void main(String[] args) {
         int n = 23455;
@@ -12,8 +12,6 @@ public class CountingOccurences
 
             }
             n = n / 10;
-
-
         }
         System.out.println(count);
     }
