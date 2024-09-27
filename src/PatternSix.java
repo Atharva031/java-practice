@@ -21,7 +21,7 @@ public class PatternSix
             {
                 System.out.print(j);
             }
-            System.out.println(" ");
+            System.out.println("-");
         }
     }
     public static void main(String[] args)

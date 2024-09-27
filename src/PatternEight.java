@@ -1,26 +1,30 @@
-/*                                      Pattern 7:
-                                           *
-                                          ***
-                                         *****
-                                        *******
-                                       *********
- */
 
+/*                                      Pattern 8:
+                                      *********
+                                       *******
+                                        *****
+                                         ***
+                                          *
+ */
 
 
 import java.util.Scanner;
 
-public class PatternSeven {
-    static void patternSeven(int n) {
+public class PatternEight
+{
+    static void patternEight(int n)
+    {
         // Loop through the number of rows
         for(int i = 0; i < n; i++) {
             // Print leading spaces
-            for(int j = 0; j < n - i - 1; j++) {
+            for(int j = 0; j < i; j++)
+            {
                 System.out.print("-");
             }
 
             // Print stars
-            for(int j = 0; j < 2 * i + 1; j++) {
+            for(int j = 0; j < 2*n - (2 * i + 1); j++)
+            {
                 System.out.print("*");
             }
 
@@ -32,6 +36,6 @@ public class PatternSeven {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        patternSeven(n);
+        patternEight(n);
     }
 }

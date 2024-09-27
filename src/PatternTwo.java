@@ -17,7 +17,7 @@ public class PatternTwo
             {
                 System.out.print("*");
             }
-            System.out.println(" ");
+            System.out.println("-");
         }
 
     }
