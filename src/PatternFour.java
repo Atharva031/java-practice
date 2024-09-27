@@ -1,9 +1,9 @@
-/*                                      Pattern 3:
+/*                                      Pattern 4:
                                          1
-                                         12
-                                         123
-                                         1234
-                                         12345
+                                         22
+                                         333
+                                         4444
+                                         55555
 
 
 
@@ -11,19 +11,17 @@
 
 
  */
-
 import java.util.Scanner;
 
-
-public class PatternThree
+public class PatternFour
 {
-    static void patternThree(int n)
+    static void patternFour(int n)
     {
         for(int i = 0; i<=n; i++)
         {
             for(int j = 1; j<=i; j++)
             {
-                System.out.print(j);
+                System.out.print(i);
             }
             System.out.println(" ");
         }
@@ -33,7 +31,6 @@ public class PatternThree
     {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        patternThree(n);
+        patternFour(n);
     }
-
 }
