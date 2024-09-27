@@ -6,10 +6,6 @@
                                          55555
 
 
-
-
-
-
  */
 import java.util.Scanner;
 
@@ -25,7 +21,6 @@ public class PatternFour
             }
             System.out.println(" ");
         }
-
     }
     public static void main(String[] args)
     {
