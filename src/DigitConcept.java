@@ -119,15 +119,66 @@ public class DigitConcept
         }
     }
 
+    static void HCF(int n1, int n2)
+    {
+        int hcf = 1;
+
+        for(int i = 1; i<=Math.min(n1,n2); i++)
+        {
+            if(n1%i==0 && n2%i==0)
+            {
+                hcf=i;
+            }
+        }
+        System.out.println(hcf);
+
+        /*
+        Method for better complexity
+
+        for(int i = Math.min(n1,n2); i>=1; i--)
+        {
+            if(n1%i==0 && n2%i==0)
+            {
+                System.out.println(i);
+                break;
+            }
+         */
+
+        /*
+        Here it is best case
+        while(a>0 && b>0)
+        {
+            if(a>b)
+            {
+                a = a%b;
+            }
+            else
+            {
+                b = b%a;
+            }
+            if(a==0)
+            {
+                System.out.println(b)
+            }
+            else
+            {
+                System.out.println(a)
+            }
+         */
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+//        int n = sc.nextInt();
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
 //        countDigits(n);
 //        ReverseTheDigits(n);
 //        checkPalindrome(n);
 //        checkArmstrong(n);
 //        printAllDivisors(n);
-        checkPrime(n);
+//        checkPrime(n);
+        HCF(n1,n2);
     }
 }
