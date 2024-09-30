@@ -167,6 +167,27 @@ public class DigitConcept
          */
     }
 
+    static Long[] lcmAndGcd(Long A, Long B)
+    {
+        // Initialize the GCD variable
+        Long gcd = 1L;
+
+        // Calculate GCD using the Euclidean algorithm
+        Long a = A;
+        Long b = B;
+        while (b != 0) {
+            gcd = b;
+            b = a % b;
+            a = gcd;
+        }
+
+        // Calculate LCM using the relationship with GCD
+        Long lcm = (A * B) / gcd;
+
+        // Return the result as an array of Long
+        return new Long[] { lcm, gcd };
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
