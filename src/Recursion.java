@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 
+
+
 public class Recursion
 {
     static void recursion1(int i, int n)
@@ -11,7 +13,6 @@ public class Recursion
         }
         System.out.println("Atharva");
         recursion1(i+1,n);
-
     }
 
     static void recursion2(int i, int n)
@@ -22,7 +23,6 @@ public class Recursion
         }
         System.out.println(i);
         recursion2(i+1,n);
-
     }
 
     static void recursion3(int i, int n)
@@ -41,7 +41,7 @@ public class Recursion
         {
             return;
         }
-        sout(i);
+        System.out.println(i);
         recursion3(i-1,n)
 
          */
@@ -69,6 +69,26 @@ public class Recursion
         System.out.println(i);
     }
 
+    static void addingFirstNElements(int i, int sum)
+    {
+        //Parameterized Recursion
+        if(i<1)
+        {
+            System.out.println(sum);
+            return;
+        }
+        addingFirstNElements(i-1,sum+i);
+    }
+
+    static int addingFirstNElements2(int n)
+    {
+        //Functional Recursion
+        if(n==0)
+        {
+            return 0;
+        }
+        return n + addingFirstNElements2(n-1);
+    }
 
     public static void main(String[] args)
     {
@@ -80,6 +100,8 @@ public class Recursion
 //        recursion2(i,n);
 //        recursion3(i,n);
 //        recursion4(n,n);
-        recursion5(i,n);
+//        recursion5(i,n);
+//        addingFirstNElements(n,0);
+        System.out.println(addingFirstNElements2(n));
     }
 }
