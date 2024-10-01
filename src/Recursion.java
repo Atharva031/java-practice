@@ -90,6 +90,16 @@ public class Recursion
         return n + addingFirstNElements2(n-1);
     }
 
+    static int factorialOfN(int n)
+    {
+        //Functional Recursion
+        if(n==0)
+        {
+            return 1;
+        }
+        return n * factorialOfN(n-1);
+    }
+
     public static void main(String[] args)
     {
         int i = 1;
@@ -102,6 +112,7 @@ public class Recursion
 //        recursion4(n,n);
 //        recursion5(i,n);
 //        addingFirstNElements(n,0);
-        System.out.println(addingFirstNElements2(n));
+//        System.out.println(addingFirstNElements2(n));
+        System.out.println(factorialOfN(n));
     }
 }
