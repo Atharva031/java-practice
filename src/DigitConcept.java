@@ -23,7 +23,7 @@ public class DigitConcept
     {
         int newNumber = 0;
         while(n>0)
-        {
+        {   
             int lastNumber = n%10;
             newNumber = newNumber*10 + lastNumber;
             n = n/10;
