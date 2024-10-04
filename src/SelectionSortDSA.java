@@ -41,12 +41,6 @@ public class SelectionSortDSA
         {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Initial array: ");
-        for(int i = 0; i<n; i++)
-        {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
 
         selectionSort(arr,n);
 
