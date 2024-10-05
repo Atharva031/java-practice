@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//Recursion for common digit problem statements
 
 public class Recursion
 {
