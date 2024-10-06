@@ -3,7 +3,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.lang.Math.sqrt;
 import static java.util.Collections.sort;
 
 public class DigitConcept
@@ -167,7 +166,7 @@ public class DigitConcept
          */
     }
 
-    static Long[] lcmAndGcd(Long A, Long B)
+    static Long[] LCMandHCF(Long A, Long B)
     {
         // Initialize the GCD variable
         Long gcd = 1L;
