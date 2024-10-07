@@ -168,23 +168,23 @@ public class DigitConcept
 
     static Long[] LCMandHCF(Long A, Long B)
     {
-        // Initialize the GCD variable
-        Long gcd = 1L;
+        // Initialize the HCF variable
+        Long HCF = 1L;
 
-        // Calculate GCD using the Euclidean algorithm
+        // Calculate HCF using the Euclidean algorithm
         Long a = A;
         Long b = B;
         while (b != 0) {
-            gcd = b;
+            HCF = b;
             b = a % b;
-            a = gcd;
+            a = HCF;
         }
 
-        // Calculate LCM using the relationship with GCD
-        Long lcm = (A * B) / gcd;
+        // Calculate LCM using the relationship with HCF
+        Long LCM = (A * B) / HCF;
 
         // Return the result as an array of Long
-        return new Long[] { lcm, gcd };
+        return new Long[] { LCM, HCF };
     }
 
     public static void main(String[] args)

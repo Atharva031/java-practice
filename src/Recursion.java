@@ -33,13 +33,13 @@ public class Recursion
         printNumbersDescending(i, n - 1);
     }
 
-    static void printNumbersAscendingBacktracking(int i, int n)
+    static void printNumbersAscendingBacktracking(int i)
     {
         if (i < 1)
         {
             return;
         }
-        printNumbersAscendingBacktracking(i - 1, n);
+        printNumbersAscendingBacktracking(i - 1);
         System.out.println(i);
     }
 
@@ -86,15 +86,37 @@ public class Recursion
         int i = 1;
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.println("Entered value " + n);
+        int option = sc.nextInt();
+        System.out.println("Entered value of n: " + n);
+        System.out.println("Entered value of Option: " + n);
 
-//        printNameNTimes(i, n);
-//        printNumbersAscending(i, n);
-//        printNumbersDescending(i, n);
-//        printNumbersAscendingBacktracking(n, n);
-//        printNumbersDescendingBacktracking(i, n);
-//        sumFirstNNumbersParameterized(n, 0);
-//        System.out.println(sumFirstNNumbersFunctional(n));
-        System.out.println(calculateFactorial(n));
+        switch(option)
+        {
+            case 1:
+                printNameNTimes(i, n);
+                break;
+            case 2:
+                printNumbersAscending(i, n);
+                break;
+            case 3:
+                printNumbersDescending(i, n);
+                break;
+            case 4:
+                printNumbersAscendingBacktracking(n);
+                break;
+            case 5:
+                printNumbersDescendingBacktracking(i, n);
+                break;
+            case 6:
+                sumFirstNNumbersParameterized(n, 0);
+                break;
+            case 7:
+                System.out.println(sumFirstNNumbersFunctional(n));
+                break;
+            case 8:
+                System.out.println(calculateFactorial(n));
+                break;
+
+        }
     }
 }
