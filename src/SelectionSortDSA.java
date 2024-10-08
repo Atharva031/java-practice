@@ -4,7 +4,7 @@ public class SelectionSortDSA
 {
     static void selectionSort(int[] arr, int n)
     {
-        for(int i = 0; i<= n - 2; i++)
+        for(int i = 0; i<=n-2; i++)
         {
             System.out.println("Pass " + (i+1) + ":");
             int mini = i;
@@ -33,7 +33,7 @@ public class SelectionSortDSA
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of elements:");
+        System.out.println("Enter the number of elements :");
         int n = sc.nextInt();
         int[] arr = new int[n];
         System.out.println("Enter the elements of the array:");

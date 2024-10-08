@@ -85,10 +85,12 @@ public class Recursion
     {
         int i = 1;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of n");
         int n = sc.nextInt();
+        System.out.println("Enter the value of option");
         int option = sc.nextInt();
         System.out.println("Entered value of n: " + n);
-        System.out.println("Entered value of Option: " + n);
+        System.out.println("Entered value of option: " + n);
 
         switch(option)
         {
@@ -116,7 +118,6 @@ public class Recursion
             case 8:
                 System.out.println(calculateFactorial(n));
                 break;
-
         }
     }
 }
