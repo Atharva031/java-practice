@@ -12,7 +12,7 @@ public class HashMapHashing {
             arr[i] = sc.nextInt();
         }
 
-        //precompute:
+        //precompute
         HashMap<Integer, Integer> mp = new HashMap<>();
         for (int i = 0; i < n; i++) {
             int key = arr[i];
